@@ -3,7 +3,7 @@
 // When Python backend is ready, flip DEMO_MODE to false.
 
 const DEMO_MODE = false;
-const API_URL   = 'https://shopall-chatbot.onrender.com';
+const API_URL   = 'https://shopall-chatbot.onrender.com/chat';
 
 const toggle    = document.getElementById('chat-toggle');
 const modal     = document.getElementById('chat-modal');
