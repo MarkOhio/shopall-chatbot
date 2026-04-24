@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopAll — Everything You Need</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="chatbot.css">
+</head>
+<body>
+
+  <!-- ── HEADER ── -->
+  <header>
+    <div class="header-inner">
+      <a href="#" class="logo">Shop<span>All</span></a>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">Products</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </nav>
+      <div class="header-search">
+        <input type="text" id="searchInput" placeholder="Search products…">
+        <button id="searchBtn">
+          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ── HERO ── -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-tag">New Arrivals Every Week</div>
+      <h1>Your <em>everyday</em> store for everything.</h1>
+      <p>Electronics, fashion, home goods, beauty, sports, food — all in one place. Quality products at fair prices, delivered to your door.</p>
+      <a href="#products" class="hero-cta">Shop All Products</a>
+    </div>
+  </section>
+
+  <!-- ── FILTER BAR ── -->
+  <section class="filter-bar">
+    <h2>Browse</h2>
+    <button class="filter-btn active" data-cat="All">All</button>
+    <button class="filter-btn" data-cat="Electronics">Electronics</button>
+    <button class="filter-btn" data-cat="Fashion">Fashion</button>
+    <button class="filter-btn" data-cat="Home & Kitchen">Home & Kitchen</button>
+    <button class="filter-btn" data-cat="Beauty">Beauty</button>
+    <button class="filter-btn" data-cat="Sports">Sports</button>
+    <button class="filter-btn" data-cat="Stationery">Stationery</button>
+    <button class="filter-btn" data-cat="Food">Food</button>
+  </section>
+
+  <!-- ── PRODUCT GRID ── -->
+  <section class="product-section" id="products">
+    <div class="product-grid" id="productGrid"></div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="#" class="logo">Shop<span>All</span></a>
+        <p>Your one-stop general store. Quality products across every category, at prices that make sense.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="#">Electronics</a></li>
+          <li><a href="#">Fashion</a></li>
+          <li><a href="#">Home & Kitchen</a></li>
+          <li><a href="#">Beauty</a></li>
+          <li><a href="#">Sports</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Help</h4>
+        <ul>
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">Returns Policy</a></li>
+          <li><a href="#">Track Order</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Live Chat</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 ShopAll. All rights reserved.</span>
+      <span>Built with care for our customers.</span>
+    </div>
+  </footer>
+
+  <!-- ── CHATBOT WIDGET ── -->
+  <div id="chatbot-widget">
+    <button id="chat-toggle" aria-label="Open chat">
+      <svg id="icon-chat" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+      </svg>
+      <svg id="icon-close" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" style="display:none">
+        <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+      </svg>
+    </button>
+
+    <div id="chat-modal">
+      <div id="chat-header">
+        <div class="chat-header-info">
+          <div class="chat-avatar">S</div>
+          <div>
+            <div class="chat-name">ShopAll Assistant</div>
+            <div class="chat-status">● Online</div>
+          </div>
+        </div>
+      </div>
+      <div id="chat-messages"></div>
+      <div id="chat-input-area">
+        <input type="text" id="chat-input" placeholder="Ask me anything…" autocomplete="off">
+        <button id="chat-send">
+          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+            <line x1="22" y1="2" x2="11" y2="13"/>
+            <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="products.js"></script>
+  <script src="app.js"></script>
+  <script src="chatbot.js"></script>
+</body>
+</html>

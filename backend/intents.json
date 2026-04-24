@@ -1,0 +1,315 @@
+{
+  "business_name": "ShopAll",
+  "fallback": "I'm not sure about that. For further help, please use the Live Chat link in our footer — a real agent will assist you right away.",
+  "live_chat_url": "https://shopall.com/live-chat",
+  "intents": [
+
+    {
+      "tag": "greeting",
+      "patterns": [
+        "hello", "hi", "hey", "good morning", "good afternoon",
+        "good evening", "howdy", "what's up", "sup", "start",
+        "anyone there", "are you there"
+      ],
+      "responses": [
+        "Hi there! Welcome to ShopAll. I can help with products, pricing, orders, returns, or store info. What do you need?",
+        "Hello! I'm the ShopAll assistant. Ask me anything about our store, products, or how we work."
+      ]
+    },
+
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "bye", "goodbye", "see you", "see ya", "later",
+        "take care", "i'm done", "that's all", "thanks bye"
+      ],
+      "responses": [
+        "Goodbye! Come back anytime. Happy shopping!",
+        "See you soon! Feel free to return if you have more questions."
+      ]
+    },
+
+    {
+      "tag": "thanks",
+      "patterns": [
+        "thank you", "thanks", "thank u", "appreciate it",
+        "that helped", "great thanks", "ok thanks", "cool thanks"
+      ],
+      "responses": [
+        "You're welcome! Anything else I can help with?",
+        "Glad I could help! Let me know if there's anything else."
+      ]
+    },
+
+    {
+      "tag": "store_hours",
+      "patterns": [
+        "what are your hours", "when are you open", "opening hours",
+        "store hours", "what time do you open", "what time do you close",
+        "are you open on sunday", "are you open today",
+        "do you open on weekends", "open saturday"
+      ],
+      "responses": [
+        "ShopAll is open Monday to Saturday 8am–8pm, and Sunday 10am–6pm (West Africa Time). We're closed on public holidays."
+      ]
+    },
+
+    {
+      "tag": "store_location",
+      "patterns": [
+        "where are you located", "what is your address", "where is your store",
+        "how do i find you", "store address", "your location",
+        "where can i find shopall", "physical store", "come to the store",
+        "visit you"
+      ],
+      "responses": [
+        "Our store is at 14 Commerce Road, Ikeja, Lagos, Nigeria. We also deliver nationwide across all 36 states."
+      ]
+    },
+
+    {
+      "tag": "delivery",
+      "patterns": [
+        "do you deliver", "delivery", "shipping", "how long does delivery take",
+        "when will my order arrive", "delivery time", "nationwide delivery",
+        "do you ship", "delivery fee", "how much is delivery",
+        "can you deliver to me", "outside lagos", "abuja", "port harcourt"
+      ],
+      "responses": [
+        "Yes, we deliver nationwide! Lagos orders arrive in 1–2 business days. Other states take 3–5 business days. Delivery fees depend on your location and are calculated at checkout."
+      ]
+    },
+
+    {
+      "tag": "return_policy",
+      "patterns": [
+        "return", "refund", "exchange", "send back", "return policy",
+        "can i return", "how do i return", "i want a refund",
+        "wrong item", "change of mind", "return an item",
+        "how long do i have to return", "return window"
+      ],
+      "responses": [
+        "You can return any item within 7 days of delivery for a full refund, provided it is unused and in its original packaging. To start a return, visit our Returns page or contact us via Live Chat."
+      ]
+    },
+
+    {
+      "tag": "how_to_order",
+      "patterns": [
+        "how do i order", "how to buy", "how to purchase", "how do i buy",
+        "placing an order", "how does it work", "steps to order",
+        "how to place an order", "i want to buy", "i want to order",
+        "checkout process", "payment method", "how do i pay"
+      ],
+      "responses": [
+        "To place an order: browse our products, click the item you want, and follow the checkout steps. We accept bank transfer, debit/credit card, and cash on delivery. You'll get an order confirmation by email once it's placed."
+      ]
+    },
+
+    {
+      "tag": "payment_methods",
+      "patterns": [
+        "payment methods", "how can i pay", "do you accept card",
+        "do you accept cash", "bank transfer", "pos", "paystack",
+        "flutterwave", "can i pay online", "cash on delivery",
+        "payment options", "how to pay"
+      ],
+      "responses": [
+        "We accept bank transfer, debit and credit cards (Visa, Mastercard), and cash on delivery for eligible locations. All online payments are secured."
+      ]
+    },
+
+    {
+      "tag": "product_categories",
+      "patterns": [
+        "what do you sell", "what products do you have",
+        "what categories", "what kind of products", "types of products",
+        "what is available", "show me your products", "product list",
+        "what can i buy here", "what's in stock"
+      ],
+      "responses": [
+        "ShopAll carries products across 7 categories: Electronics, Fashion, Home & Kitchen, Beauty, Sports & Fitness, Stationery, and Food. Use the category filter on the homepage to browse each section."
+      ]
+    },
+
+    {
+      "tag": "electronics",
+      "patterns": [
+        "electronics", "gadgets", "headphones", "keyboard", "mouse",
+        "power bank", "desk lamp", "laptop", "phone accessories",
+        "tech products", "electronic items"
+      ],
+      "responses": [
+        "Our Electronics section includes wireless headphones, a mechanical keyboard, wireless mouse, smart LED desk lamp, and a 20000mAh power bank. Prices range from ₦3,200 to ₦18,900."
+      ]
+    },
+
+    {
+      "tag": "fashion",
+      "patterns": [
+        "fashion", "clothes", "clothing", "shirts", "dress", "shoes",
+        "sneakers", "bag", "sunglasses", "what clothes do you have",
+        "men's wear", "women's wear", "accessories"
+      ],
+      "responses": [
+        "Our Fashion section has a Men's Oxford Shirt (₦5,500), Women's Floral Midi Dress (₦8,200), Unisex Canvas Sneakers (₦9,800), Leather Crossbody Bag (₦14,500), and Polarized Sunglasses (₦4,200)."
+      ]
+    },
+
+    {
+      "tag": "home_kitchen",
+      "patterns": [
+        "home", "kitchen", "cookware", "frying pan", "kettle",
+        "water bottle", "cutting board", "wall clock", "home items",
+        "kitchen products", "household"
+      ],
+      "responses": [
+        "Home & Kitchen items include a Stainless Steel Water Bottle (₦2,800), Non-Stick Frying Pan Set (₦11,200), Bamboo Cutting Board (₦3,500), Electric Kettle (₦6,800), and a Minimalist Wall Clock (₦4,100)."
+      ]
+    },
+
+    {
+      "tag": "beauty",
+      "patterns": [
+        "beauty", "skincare", "serum", "vitamin c", "facial brush",
+        "grooming", "men grooming kit", "beauty products",
+        "skin care", "face wash", "personal care"
+      ],
+      "responses": [
+        "Beauty products include a Vitamin C Brightening Serum (₦5,900), Electric Facial Cleansing Brush (₦8,700), and a Men's Grooming Kit (₦7,200)."
+      ]
+    },
+
+    {
+      "tag": "sports",
+      "patterns": [
+        "sports", "fitness", "gym", "yoga mat", "dumbbell",
+        "jump rope", "workout", "exercise", "fitness equipment",
+        "sports gear"
+      ],
+      "responses": [
+        "Sports & Fitness items include a Non-Slip Yoga Mat (₦4,500), Adjustable Dumbbell Set (₦22,000), and a Speed Cable Jump Rope (₦1,800)."
+      ]
+    },
+
+    {
+      "tag": "stationery",
+      "patterns": [
+        "stationery", "notebook", "pen", "writing", "book",
+        "journal", "dotted notebook", "gel pen", "office supplies"
+      ],
+      "responses": [
+        "Stationery items include a Hardcover Dotted Notebook A5 (₦2,200) and a 12-colour Gel Pen Set (₦1,500)."
+      ]
+    },
+
+    {
+      "tag": "food",
+      "patterns": [
+        "food", "snacks", "eat", "honey", "nuts", "organic",
+        "food items", "edibles", "mixed nuts", "what food"
+      ],
+      "responses": [
+        "Our Food section has Organic Honey 500g (₦3,800) and a Mixed Nuts Gift Box 400g (₦5,200). Both are natural and preservative-free."
+      ]
+    },
+
+    {
+      "tag": "pricing",
+      "patterns": [
+        "how much", "price", "cost", "pricing", "how much does it cost",
+        "is it expensive", "affordable", "cheap", "price range",
+        "what is the price", "costs"
+      ],
+      "responses": [
+        "Our prices range from ₦1,500 (Gel Pen Set) to ₦22,000 (Adjustable Dumbbells). All prices are in Nigerian Naira and are displayed on each product card. We also run weekly deals."
+      ]
+    },
+
+    {
+      "tag": "discount_deals",
+      "patterns": [
+        "discount", "deal", "sale", "promo", "offer", "coupon",
+        "cheaper", "any deals", "on sale", "weekly deals",
+        "promotional offer", "price reduction"
+      ],
+      "responses": [
+        "We run weekly deals on selected products — check the homepage banner for current offers. You can also sign up for our newsletter to get notified about promotions."
+      ]
+    },
+
+    {
+      "tag": "track_order",
+      "patterns": [
+        "track my order", "where is my order", "order status",
+        "has my order shipped", "when will it arrive",
+        "i haven't received my order", "tracking", "track order"
+      ],
+      "responses": [
+        "To track your order, visit the 'Track Order' page in the footer and enter your order ID. You should also have received a tracking link in your confirmation email. If you're having trouble, contact us via Live Chat."
+      ]
+    },
+
+    {
+      "tag": "complaint_issue",
+      "patterns": [
+        "complaint", "problem", "issue", "wrong item", "damaged",
+        "broken", "not working", "bad product", "unhappy",
+        "disappointed", "incorrect order", "missing item",
+        "i have a problem", "item is damaged"
+      ],
+      "responses": [
+        "I'm sorry to hear that. For product issues, damaged items, or incorrect orders — please reach our live support team directly via the Live Chat link in the footer. They'll resolve it for you as fast as possible."
+      ]
+    },
+
+    {
+      "tag": "contact",
+      "patterns": [
+        "contact", "how do i contact you", "customer service",
+        "speak to someone", "talk to a human", "live agent",
+        "customer care", "support", "email", "phone number",
+        "reach you", "get in touch"
+      ],
+      "responses": [
+        "You can reach us via Live Chat (footer link), email at support@shopall.com, or call 0800-SHOPALL (0800-746725). Our support team is available Monday–Saturday 8am–6pm."
+      ]
+    },
+
+    {
+      "tag": "live_chat_escalation",
+      "patterns": [
+        "live chat", "talk to agent", "real person", "human support",
+        "escalate", "speak to a person", "connect me to someone",
+        "agent please", "i need human help"
+      ],
+      "responses": [
+        "No problem — click the 'Live Chat' link in our website footer to connect with a live support agent right away."
+      ]
+    },
+
+    {
+      "tag": "stock_availability",
+      "patterns": [
+        "in stock", "out of stock", "available", "do you have",
+        "is it available", "stock", "quantity", "how many left"
+      ],
+      "responses": [
+        "All products shown on the site are currently in stock. If a product becomes unavailable, it will be marked accordingly. For bulk orders or specific stock queries, contact us via Live Chat."
+      ]
+    },
+
+    {
+      "tag": "about_shopall",
+      "patterns": [
+        "who are you", "what is shopall", "about shopall",
+        "tell me about this store", "what do you do",
+        "company info", "about your company"
+      ],
+      "responses": [
+        "ShopAll is a Nigerian general store offering quality products across electronics, fashion, home goods, beauty, sports, stationery, and food — all in one place, at fair prices, with nationwide delivery."
+      ]
+    }
+
+  ]
+}
